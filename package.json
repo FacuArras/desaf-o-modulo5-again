@@ -1,0 +1,15 @@
+{
+  "name": "dwfm5-desafio-final",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.12",
+    "parcel": "^2.8.1"
+  }
+}

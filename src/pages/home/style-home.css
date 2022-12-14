@@ -1,0 +1,9 @@
+.title {
+  margin: 0 8% 60px;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

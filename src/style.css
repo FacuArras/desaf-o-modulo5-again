@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Odibee Sans", cursive;
+}
+
+body {
+  margin: 0;
+  background-image: url("../images/fondo-dekstop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 8vh 0 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  padding: 0 8%;
+}

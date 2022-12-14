@@ -1,0 +1,9 @@
+.subtitle {
+  margin: 5vh 10% 60px;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
