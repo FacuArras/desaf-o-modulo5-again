@@ -5,7 +5,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --dist-dir build --public-url /desafio-modulo5-remake",
+    "deploy": "gh-pages -d build"
   },
   "license": "MIT",
   "devDependencies": {

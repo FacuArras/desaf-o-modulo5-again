@@ -2,6 +2,7 @@ import { initPageHome } from "./pages/home/index-home";
 import { initPagePlay } from "./pages/play/index-play";
 import { initPageGame } from "./pages/game/index-game";
 import { initPageResults } from "./pages/results/index-results";
+const BASE_PATH = "/desafio-modulo5-remake"
 
 const routes = [
     {
@@ -23,16 +24,20 @@ const routes = [
 ];
 
 export function initRouter(container) {
+    function isGithubPages() {
+        return location.host.includes("github.io");
+    }
 
     function goTo(path) {
-        history.pushState({}, "", path);
-        handleRoute(path);
+        const completePath = isGithubPages() ? BASE_PATH + path : path;
+        history.pushState({}, "", completePath);
+        handleRoute(completePath);
     }
 
     function handleRoute(route) {
-
+        const newRoute = isGithubPages() ? route.replace(BASE_PATH, "") : route;
         for (const r of routes) {
-            if (r.path.test(route)) {
+            if (r.path.test(newRoute)) {
                 const el = r.component({ goTo: goTo });
 
                 if (container.firstChild) {
@@ -44,7 +49,7 @@ export function initRouter(container) {
         }
     }
 
-    if (location.pathname === "/") {
+    if (location.pathname === "/" || location.host.includes("github.io")) {
         goTo("/home");
     } else {
         handleRoute(location.pathname);
