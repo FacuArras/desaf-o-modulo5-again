@@ -1,0 +1,41 @@
+body {
+  padding: 0 !important;
+}
+
+.lose, .win, .tie {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.lose {
+  background-color: #894949e6;
+}
+
+.results {
+  background-color: #fff;
+  border: 10px solid #000;
+  border-radius: 10px;
+  margin: 5vh 0;
+  padding: 15px 30px;
+}
+
+.win {
+  background-color: #888949e6;
+}
+
+.tie {
+  background-color: #02648b80;
+}
+
+.tie__image {
+  height: 260px;
+  width: 254px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*# sourceMappingURL=index.1f9870f5.css.map */

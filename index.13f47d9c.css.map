@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/pages/game/style-game.css"],"sourcesContent":[".counter-cont {\r\n  font-size: 200px;\r\n  font-weight: 700;\r\n  text-align: center;\r\n  transform: translateY(17vh);\r\n  margin-top: 20vh;\r\n}\r\n"],"names":[],"version":3,"file":"index.13f47d9c.css.map","sourceRoot":"/__parcel_source_root/"}
