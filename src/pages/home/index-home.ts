@@ -1,5 +1,6 @@
 export function initPageHome(params) {
     const div = document.createElement("div");
+    div.classList.add("home");
     div.innerHTML = `
         <div class="title">
             <text-comp type="title">Piedra </text-comp>
